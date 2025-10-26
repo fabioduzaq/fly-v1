@@ -1,0 +1,31 @@
+{
+  "name": "pixgg-webhook-listener",
+  "version": "1.0.0",
+  "description": "Servidor Node.js que escuta eventos do Pusher e re-encaminha para webhook",
+  "main": "webhook-listener.js",
+  "scripts": {
+    "start": "node webhook-listener.js",
+    "dev": "node webhook-listener.js",
+    "pm2:start": "pm2 start webhook-listener.js --name pixgg-webhook",
+    "pm2:stop": "pm2 stop pixgg-webhook",
+    "pm2:restart": "pm2 restart pixgg-webhook",
+    "pm2:logs": "pm2 logs pixgg-webhook"
+  },
+  "keywords": [
+    "pusher",
+    "webhook",
+    "nodejs",
+    "pixgg",
+    "donation"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "pusher-js": "^7.6.0",
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
