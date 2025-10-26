@@ -1,4 +1,4 @@
-// Importar bibliotecas
+// Importar bibliotecas 
 require('dotenv').config();
 const http = require('http');
 const Pusher = require('pusher-js');
